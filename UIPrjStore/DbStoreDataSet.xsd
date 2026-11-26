@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DbStoreDataSet" targetNamespace="http://tempuri.org/DbStoreDataSet.xsd" xmlns:mstns="http://tempuri.org/DbStoreDataSet.xsd" xmlns="http://tempuri.org/DbStoreDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DbStoreConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DbStoreConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.UIPrjStore.Properties.Settings.GlobalReference.Default.DbStoreConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TblSellingTableAdapter" GeneratorDataComponentClassName="TblSellingTableAdapter" Name="TblSelling" UserDataComponentName="TblSellingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DbStoreConnectionString (Settings)" DbObjectName="DbStore.dbo.TblSelling" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IDFactor, NameProducts, ProductType, Number, Unit, Price, FinalPrice FROM dbo.TblSelling</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IDFactor" DataSetColumn="IDFactor" />
+              <Mapping SourceColumn="NameProducts" DataSetColumn="NameProducts" />
+              <Mapping SourceColumn="ProductType" DataSetColumn="ProductType" />
+              <Mapping SourceColumn="Number" DataSetColumn="Number" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+              <Mapping SourceColumn="FinalPrice" DataSetColumn="FinalPrice" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DbStoreDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DbStoreDataSet" msprop:Generator_UserDSName="DbStoreDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TblSelling" msprop:Generator_TableClassName="TblSellingDataTable" msprop:Generator_TableVarName="tableTblSelling" msprop:Generator_TablePropName="TblSelling" msprop:Generator_RowDeletingName="TblSellingRowDeleting" msprop:Generator_RowChangingName="TblSellingRowChanging" msprop:Generator_RowEvHandlerName="TblSellingRowChangeEventHandler" msprop:Generator_RowDeletedName="TblSellingRowDeleted" msprop:Generator_UserTableName="TblSelling" msprop:Generator_RowChangedName="TblSellingRowChanged" msprop:Generator_RowEvArgName="TblSellingRowChangeEvent" msprop:Generator_RowClassName="TblSellingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IDFactor" msprop:Generator_ColumnVarNameInTable="columnIDFactor" msprop:Generator_ColumnPropNameInRow="IDFactor" msprop:Generator_ColumnPropNameInTable="IDFactorColumn" msprop:Generator_UserColumnName="IDFactor" type="xs:int" />
+              <xs:element name="NameProducts" msprop:Generator_ColumnVarNameInTable="columnNameProducts" msprop:Generator_ColumnPropNameInRow="NameProducts" msprop:Generator_ColumnPropNameInTable="NameProductsColumn" msprop:Generator_UserColumnName="NameProducts">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductType" msprop:Generator_ColumnVarNameInTable="columnProductType" msprop:Generator_ColumnPropNameInRow="ProductType" msprop:Generator_ColumnPropNameInTable="ProductTypeColumn" msprop:Generator_UserColumnName="ProductType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" type="xs:int" />
+              <xs:element name="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" msprop:Generator_UserColumnName="Unit">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" type="xs:int" />
+              <xs:element name="FinalPrice" msprop:Generator_ColumnVarNameInTable="columnFinalPrice" msprop:Generator_ColumnPropNameInRow="FinalPrice" msprop:Generator_ColumnPropNameInTable="FinalPriceColumn" msprop:Generator_UserColumnName="FinalPrice" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
